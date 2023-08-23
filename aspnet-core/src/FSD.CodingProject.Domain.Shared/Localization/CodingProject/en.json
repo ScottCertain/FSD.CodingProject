@@ -3,6 +3,30 @@
   "texts": {
     "Menu:Home": "Home",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Menu:CodingProject": "Coding Project",
+    "Menu:CalculationInputs": "Calculation Inputs",
+    "Menu:ChangeInputs": "Change Inputs",
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "JobsPerMonth": "Jobs/Month",
+    "PayrollRevenuePercent": "Payroll/Revenue Percent",
+    "BillRatePerJob": "Bill Rate/Job",
+    "RecurringHomesLostPerMonth": "Recurring Homes Lost/Month",
+    "NetProfit": "Net Profit",
+    "PercentRateIncrease": "Percent Rate Increase",
+    "PercentExpectedJobLoss": "Percent Expected Job Loss",
+    "LowerPayrollRevenuePercent": "Lower Payroll/Revenue Percent",
+    "ImproveRecurringHomesLostPerMonth": "Improve Recurring Homes Lost/Month",
+    "CalculationInputId": "7f2a7d30-a3a9-9273-3632-3a0d35873422",
+    "NewCalculationInputs": "New Calculation Inputs",
+    "CreationTime": "Creation time",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "Enum:CalculationType.0": "Current",
+    "Enum:CalculationType.1": "New Hourly",
+    "Enum:CalculationType.2": "New Fee Split"
   }
 }

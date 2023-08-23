@@ -25,6 +25,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('@abp/ng.setting-management').then(m => m.SettingManagementModule.forLazy()),
   },
+  { path: 'calculation-input', loadChildren: () => import('./calculation-input/calculation-input.module').then(m => m.CalculationInputModule) },
 ];
 
 @NgModule({

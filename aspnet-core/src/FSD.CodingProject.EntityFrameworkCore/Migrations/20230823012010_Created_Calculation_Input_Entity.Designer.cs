@@ -4,6 +4,7 @@ using FSD.CodingProject.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -12,9 +13,11 @@ using Volo.Abp.EntityFrameworkCore;
 namespace FSD.CodingProject.Migrations
 {
     [DbContext(typeof(CodingProjectDbContext))]
-    partial class CodingProjectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230823012010_Created_Calculation_Input_Entity")]
+    partial class CreatedCalculationInputEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,7 +33,6 @@ namespace FSD.CodingProject.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("BillRatePerJob")
-                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("CalculationType")
@@ -74,7 +76,7 @@ namespace FSD.CodingProject.Migrations
                     b.Property<double>("NetProfit")
                         .HasColumnType("float");
 
-                    b.Property<double>("PayrollRevenuePercent")
+                    b.Property<double>("PatrollrevenuePercent")
                         .HasColumnType("float");
 
                     b.Property<double>("PercentExpectedJobLoss")
