@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FSD.CodingProject.CalculationInputs;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.FeatureManagement.EntityFrameworkCore;
 using Volo.Abp.Identity;
 using Volo.Abp.Identity.EntityFrameworkCore;
@@ -24,6 +26,8 @@ public class CodingProjectDbContext :
     ITenantManagementDbContext
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
+
+    public DbSet<CalculationInput> CalculationInputs { get; set; }
 
     #region Entities from the modules
 
@@ -82,5 +86,21 @@ public class CodingProjectDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+
+        builder.Entity<CalculationInput>(b =>
+        {
+            b.ToTable(CodingProjectConsts.DbTablePrefix + "CalculationInputs", CodingProjectConsts.DbSchema);
+            b.ConfigureByConvention();
+            b.Property(x => x.JobsPerMonth).IsRequired();
+            b.Property(x => x.BillRatePerJob).HasPrecision(18, 2);
+            b.Property(x => x.ImproveRecurringHomesLostPerMonthPercent).HasPrecision(18, 2);
+            b.Property(x => x.ImproveRecurringHomesLostPerMonthPercent).HasPrecision(18, 2);
+            b.Property(x => x.LowerPayrollRevenuePercent).HasPrecision(18, 2);
+            b.Property(x => x.PayrollRevenuePercent).HasPrecision(18, 2);
+            b.Property(x => x.PercentExpectedJobLoss).HasPrecision(18, 2);
+            b.Property(x => x.PercentNetProfit).HasPrecision(18, 2);
+            b.Property(x => x.PercentRateIncrease).HasPrecision(18, 2);
+            b.Property(x => x.PercentRecurringHomesLostPerMonth).HasPrecision(18, 2);
+        });
     }
 }

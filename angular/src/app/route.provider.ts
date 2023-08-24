@@ -15,6 +15,19 @@ function configureRoutes(routesService: RoutesService) {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/coding-project',
+        name: '::Menu:CodingProject',
+        iconClass: 'fas fa-book',
+        order: 2,
+        layout: eLayoutType.application,
+      },
+      {
+        path: '/calculation-input',
+        name: '::Menu:CalculationInput',
+        parentName: '::Menu:CodingProject',
+        layout: eLayoutType.application,
+      },
     ]);
   };
 }

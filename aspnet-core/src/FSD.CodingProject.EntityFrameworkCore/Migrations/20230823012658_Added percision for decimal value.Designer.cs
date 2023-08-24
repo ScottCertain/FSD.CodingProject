@@ -4,6 +4,7 @@ using FSD.CodingProject.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -12,9 +13,11 @@ using Volo.Abp.EntityFrameworkCore;
 namespace FSD.CodingProject.Migrations
 {
     [DbContext(typeof(CodingProjectDbContext))]
-    partial class CodingProjectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230823012658_Added percision for decimal value")]
+    partial class Addedpercisionfordecimalvalue
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,8 +58,7 @@ namespace FSD.CodingProject.Migrations
                         .HasColumnName("ExtraProperties");
 
                     b.Property<decimal>("ImproveRecurringHomesLostPerMonthPercent")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("float");
 
                     b.Property<int>("JobsPerMonth")
                         .HasColumnType("int");
@@ -70,28 +72,22 @@ namespace FSD.CodingProject.Migrations
                         .HasColumnName("LastModifierId");
 
                     b.Property<decimal>("LowerPayrollRevenuePercent")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("PayrollRevenuePercent")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("PercentExpectedJobLoss")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("float");
 
                     b.Property<decimal>("PercentNetProfit")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("float");
+
+                    b.Property<decimal>("PayrollrevenuePercent")
+                        .HasColumnType("float");
+
+                    b.Property<decimal>("PercentExpectedJobLoss")
+                        .HasColumnType("float");
 
                     b.Property<decimal>("PercentRateIncrease")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("float");
 
                     b.Property<decimal>("PercentRecurringHomesLostPerMonth")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
