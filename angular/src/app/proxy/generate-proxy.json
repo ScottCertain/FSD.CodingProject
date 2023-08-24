@@ -8926,7 +8926,7 @@
           "regex": null
         },
         {
-          "name": "PatrollRevenuePercent",
+          "name": "PayrollRevenuePercent",
           "jsonName": null,
           "type": "System.Double",
           "typeSimple": "number",
@@ -8950,7 +8950,7 @@
           "regex": null
         },
         {
-          "name": "RecurringHomesLostPerMonth",
+          "name": "PercentRecurringHomesLostPerMonth",
           "jsonName": null,
           "type": "System.Double",
           "typeSimple": "number",
@@ -8962,7 +8962,7 @@
           "regex": null
         },
         {
-          "name": "NetProfit",
+          "name": "PercentNetProfit",
           "jsonName": null,
           "type": "System.Double",
           "typeSimple": "number",
@@ -9010,7 +9010,7 @@
           "regex": null
         },
         {
-          "name": "ImproveRecurringHomesLostPerMonth",
+          "name": "ImproveRecurringHomesLostPerMonthPercent",
           "jsonName": null,
           "type": "System.Double",
           "typeSimple": "number",
@@ -9095,7 +9095,7 @@
           "regex": null
         },
         {
-          "name": "RecurringHomesLostPerMonth",
+          "name": "PercentHomesLostPerMonth",
           "jsonName": null,
           "type": "System.Double",
           "typeSimple": "number",
@@ -9107,7 +9107,7 @@
           "regex": null
         },
         {
-          "name": "NetProfit",
+          "name": "PercentNetProfit",
           "jsonName": null,
           "type": "System.Double",
           "typeSimple": "number",

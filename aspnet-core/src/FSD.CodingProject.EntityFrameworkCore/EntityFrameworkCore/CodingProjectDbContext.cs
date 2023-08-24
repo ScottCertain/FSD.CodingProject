@@ -93,6 +93,14 @@ public class CodingProjectDbContext :
             b.ConfigureByConvention();
             b.Property(x => x.JobsPerMonth).IsRequired();
             b.Property(x => x.BillRatePerJob).HasPrecision(18, 2);
+            b.Property(x => x.ImproveRecurringHomesLostPerMonthPercent).HasPrecision(18, 2);
+            b.Property(x => x.ImproveRecurringHomesLostPerMonthPercent).HasPrecision(18, 2);
+            b.Property(x => x.LowerPayrollRevenuePercent).HasPrecision(18, 2);
+            b.Property(x => x.PayrollRevenuePercent).HasPrecision(18, 2);
+            b.Property(x => x.PercentExpectedJobLoss).HasPrecision(18, 2);
+            b.Property(x => x.PercentNetProfit).HasPrecision(18, 2);
+            b.Property(x => x.PercentRateIncrease).HasPrecision(18, 2);
+            b.Property(x => x.PercentRecurringHomesLostPerMonth).HasPrecision(18, 2);
         });
     }
 }

@@ -57,7 +57,7 @@ namespace FSD.CodingProject.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("ExtraProperties");
 
-                    b.Property<double>("ImproveRecurringHomesLostPerMonth")
+                    b.Property<decimal>("ImproveRecurringHomesLostPerMonthPercent")
                         .HasColumnType("float");
 
                     b.Property<int>("JobsPerMonth")
@@ -71,22 +71,22 @@ namespace FSD.CodingProject.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("LastModifierId");
 
-                    b.Property<double>("LowerPayrollRevenuePercent")
+                    b.Property<decimal>("LowerPayrollRevenuePercent")
                         .HasColumnType("float");
 
-                    b.Property<double>("NetProfit")
+                    b.Property<decimal>("PercentNetProfit")
                         .HasColumnType("float");
 
-                    b.Property<double>("PayrollRevenuePercent")
+                    b.Property<decimal>("PayrollRevenuePercent")
                         .HasColumnType("float");
 
-                    b.Property<double>("PercentExpectedJobLoss")
+                    b.Property<decimal>("PercentExpectedJobLoss")
                         .HasColumnType("float");
 
-                    b.Property<double>("PercentRateIncrease")
+                    b.Property<decimal>("PercentRateIncrease")
                         .HasColumnType("float");
 
-                    b.Property<double>("RecurringHomesLostPerMonth")
+                    b.Property<decimal>("PercentRecurringHomesLostPerMonth")
                         .HasColumnType("float");
 
                     b.HasKey("Id");

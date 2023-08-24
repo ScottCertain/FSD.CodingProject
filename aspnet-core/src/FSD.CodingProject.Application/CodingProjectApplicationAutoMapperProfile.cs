@@ -12,5 +12,7 @@ public class CodingProjectApplicationAutoMapperProfile : Profile
          * into multiple profile classes for a better organization. */
 
         CreateMap<CalculationInput, CalculationInputDto>();
+        CreateMap<UpdateCalculationInputDto, CalculationInput>();
+
     }
 }

@@ -6,12 +6,12 @@ export interface CalculationInputDto extends AuditedEntityDto<string> {
   jobsPerMonth: number;
   payrollRevenuePercent: number;
   billRatePerJob: number;
-  recurringHomesLostPerMonth: number;
-  netProfit: number;
+  percentRecurringHomesLostPerMonth: number;
+  percentNetProfit: number;
   percentRateIncrease: number;
   percentExpectedJobLoss: number;
   lowerPayrollRevenuePercent: number;
-  improveRecurringHomesLostPerMonth: number;
+  improveRecurringHomesLostPerMonthPercent: number;
   calculationType: CalculationType;
 }
 
@@ -19,11 +19,11 @@ export interface CreateUpdateCalculationInputDto {
   jobsPerMonth: number;
   payrollRevenuePercent: number;
   billRatePerJob: number;
-  recurringHomesLostPerMonth: number;
-  netProfit: number;
+  percentRecurringHomesLostPerMonth: number;
+  percentNetProfit: number;
   percentRateIncrease: number;
   percentExpectedJobLoss: number;
   lowerPayrollRevenuePercent: number;
-  improveRecurringHomesLostPerMonth: number;
+  improveRecurringHomesLostPerMonthPercent: number;
   calculationType: CalculationType;
 }

@@ -11,7 +11,7 @@ namespace FSD.CodingProject.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.RenameColumn(
-                name: "PatrollrevenuePercent",
+                name: "PayrollrevenuePercent",
                 table: "AppCalculationInputs",
                 newName: "PayrollRevenuePercent");
         }
@@ -22,7 +22,7 @@ namespace FSD.CodingProject.Migrations
             migrationBuilder.RenameColumn(
                 name: "PayrollRevenuePercent",
                 table: "AppCalculationInputs",
-                newName: "PatrollrevenuePercent");
+                newName: "PayrollrevenuePercent");
         }
     }
 }

@@ -28,14 +28,14 @@ namespace FSD.CodingProject
                     new CalculationInput
                     {
                         JobsPerMonth = 500,
-                        PayrollRevenuePercent = 0.40,
+                        PayrollRevenuePercent = 0.40M,
                         BillRatePerJob = 175.00M,
-                        RecurringHomesLostPerMonth = 0.05,
-                        NetProfit = 0.10,
-                        PercentRateIncrease = 0.10,
-                        PercentExpectedJobLoss = 0.05,
-                        LowerPayrollRevenuePercent = 0.05,
-                        ImproveRecurringHomesLostPerMonth = 0.10,
+                        PercentRecurringHomesLostPerMonth = 0.05M,
+                        PercentNetProfit = 0.10M,
+                        PercentRateIncrease = 0.10M,
+                        PercentExpectedJobLoss = 0.05M,
+                        LowerPayrollRevenuePercent = 0.05M,
+                        ImproveRecurringHomesLostPerMonthPercent = 0.10M,
                     },
                     autoSave: true
                 );

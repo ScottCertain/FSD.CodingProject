@@ -44,12 +44,12 @@ export class CalculationInputComponent implements OnInit {
       JobsPerMonth: [this.selectedCalculationInput.jobsPerMonth || '', Validators.required],
       PayrollRevenuePercent: [this.selectedCalculationInput.payrollRevenuePercent || '', Validators.required],
       BillRatePerJob: [this.selectedCalculationInput.billRatePerJob || '', Validators.required],
-      RecurringHomesLostPerMonth: [this.selectedCalculationInput.recurringHomesLostPerMonth || '', Validators.required],
-      NetProfit: [this.selectedCalculationInput.netProfit || '', Validators.required],
+      PercentRecurringHomesLostPerMonth: [this.selectedCalculationInput.percentRecurringHomesLostPerMonth || '', Validators.required],
+      PercentNetProfit: [this.selectedCalculationInput.percentNetProfit || '', Validators.required],
       PercentRateIncrease: [this.selectedCalculationInput.percentRateIncrease || '', Validators.required],
       PercentExpectedJobLoss: [this.selectedCalculationInput.percentExpectedJobLoss || '', Validators.required],
       LowerPayrollRevenuePercent: [this.selectedCalculationInput.lowerPayrollRevenuePercent || '', Validators.required],
-      ImproveRecurringHomesLostPerMonth: [this.selectedCalculationInput.improveRecurringHomesLostPerMonth || '', Validators.required],
+      ImproveRecurringHomesLostPerMonthPercent: [this.selectedCalculationInput.improveRecurringHomesLostPerMonthPercent || '', Validators.required],
     });
   }
 

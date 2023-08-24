@@ -50,10 +50,10 @@
       <ngx-datatable-column [name]="'::BillRatePerJob' | abpLocalization" prop="billRatePerJob">
         <ng-template let-value="value" ngx-datatable-cell-template>{{ value | currency : 'USD' }}</ng-template>
       </ngx-datatable-column>
-      <ngx-datatable-column [name]="'::RecurringHomesLostPerMonth' | abpLocalization" prop="recurringHomesLostPerMonth">
+      <ngx-datatable-column [name]="'::PercentRecurringHomesLostPerMonth' | abpLocalization" prop="percentRecurringHomesLostPerMonth">
         <ng-template let-value="value" ngx-datatable-cell-template>{{ value | percent : '1.2-2' }}</ng-template>
       </ngx-datatable-column>
-      <ngx-datatable-column [name]="'::NetProfit' | abpLocalization" prop="netProfit">
+      <ngx-datatable-column [name]="'::PercentNetProfit' | abpLocalization" prop="percentNetProfit">
         <ng-template let-value="value" ngx-datatable-cell-template>{{ value | percent : '1.2-2' }}</ng-template>
       </ngx-datatable-column>
       <ngx-datatable-column [name]="'::PercentRateIncrease' | abpLocalization" prop="percentRateIncrease">
@@ -65,7 +65,7 @@
       <ngx-datatable-column [name]="'::LowerPayrollRevenuePercent' | abpLocalization" prop="lowerPayrollRevenuePercent">
         <ng-template let-value="value" ngx-datatable-cell-template>{{ value | percent : '1.2-2' }}</ng-template>
       </ngx-datatable-column>
-      <ngx-datatable-column [name]="'::ImproveRecurringHomesLostPerMonth' | abpLocalization" prop="improveRecurringHomesLostPerMonth">
+      <ngx-datatable-column [name]="'::ImproveRecurringHomesLostPerMonthPercent' | abpLocalization" prop="ImproveRecurringHomesLostPerMonthPercent">
         <ng-template let-value="value" ngx-datatable-cell-template>{{ value | percent : '1.2-2' }}</ng-template>
       </ngx-datatable-column>
     </ngx-datatable>
@@ -112,23 +112,23 @@
       </div>
 
       <div class="mt-2">
-        <label for="calculation-input-recurringHomesLostPerMonth">Recurring Homes Lost/Month</label
+        <label for="calculation-input-percentRecurringHomesLostPerMonth">Recurring Homes Lost/Month</label
         ><span> * </span>
         <input
           type="number"
-          id="calculation-input-recurringHomesLostPerMonth"
+          id="calculation-input-percentRecurringHomesLostPerMonth"
           class="form-control"
-          formControlName="RecurringHomesLostPerMonth"
+          formControlName="PercentRecurringHomesLostPerMonth"
         />
       </div>
 
       <div class="mt-2">
-        <label for="calculation-input-netProfit">Net Profit</label><span> * </span>
+        <label for="calculation-input-percentNetProfit">Net Profit</label><span> * </span>
         <input
           type="number"
-          id="calculation-input-netProfit"
+          id="calculation-input-percentNetProfit"
           class="form-control"
-          formControlName="NetProfit"
+          formControlName="PercentNetProfit"
         />
       </div>
 
@@ -167,14 +167,14 @@
       </div>
 
       <div class="mt-2">
-        <label for="calculation-input-improveRecurringHomesLostPerMonth"
+        <label for="calculation-input-ImproveRecurringHomesLostPerMonthPercent"
           >Improve Recurring Homes Lost/Month</label
         ><span> * </span>
         <input
           type="number"
-          id="calculation-input-improveRecurringHomesLostPerMonth"
+          id="calculation-input-ImproveRecurringHomesLostPerMonthPercent"
           class="form-control"
-          formControlName="ImproveRecurringHomesLostPerMonth"
+          formControlName="ImproveRecurringHomesLostPerMonthPercent"
         />
       </div>
     </form>

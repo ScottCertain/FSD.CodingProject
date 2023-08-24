@@ -7,23 +7,22 @@ namespace FSD.CodingProject.CalculationInputs
         [Required]
         public int JobsPerMonth { get; set; }
         [Required]
-        public double PatrollRevenuePercent { get; set; }
+        public decimal PayrollRevenuePercent { get; set; }
         [Required]
         public decimal BillRatePerJob { get; set; }
         [Required]
-        public double RecurringHomesLostPerMonth { get; set; }
+        public decimal PercentRecurringHomesLostPerMonth { get; set; }
         [Required]
-        public double NetProfit { get; set; }
+        public decimal PercentNetProfit { get; set; }
         [Required]
-        public double PercentRateIncrease { get; set; }
+        public decimal PercentRateIncrease { get; set; }
         [Required]
-        public double PercentExpectedJobLoss { get; set; }
+        public decimal PercentExpectedJobLoss { get; set; }
         [Required]
-        public double LowerPayrollRevenuePercent { get; set; }
+        public decimal LowerPayrollRevenuePercent { get; set; }
         [Required]
-        public double ImproveRecurringHomesLostPerMonth { get; set; }
-        [Required]
+        public decimal ImproveRecurringHomesLostPerMonthPercent { get; set; }
+        
         public CalculationType.CalculationType CalculationType { get; set; }
-        public Guid Id { get; set; }
     }
 }
